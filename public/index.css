@@ -1,0 +1,33 @@
+* {
+  box-sizing:border-box;
+}
+
+#hoursTable {
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+    border-radius: 3px;
+    border-radius: 3px;
+}
+
+#hoursTable td, #hoursTable th {
+ 
+    border: 1px solid #ddd;
+    padding: 8px;
+   
+}
+#hoursTable td:last-child {
+    width: 100%;
+}
+#hoursTable tr:nth-child(even){background-color: #f2f2f2;}
+
+#hoursTable tr:hover {background-color: #ddd;}
+
+#hoursTable th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #337ab7;
+    color: white;
+    
+}

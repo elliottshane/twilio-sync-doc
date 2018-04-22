@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+
+
+
+
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Sync Demo</title>
+    
+   <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./index.css">
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="//media.twiliocdn.com/sdk/js/sync/v0.5/twilio-sync.min.js"></script>
+
+    <script src="index.js"></script>
+  
+
+  </head>
+  <body>
+
+    <div class="container">
+     
+      <h1>Twilio Sync Demo <small>Better than Tic Tac Toe</small></h1>
+      <div class="jumbotron">
+        <h1>Twilio Sync Demo</h1>
+        <h4>This will be an attempt understanding Twilio Sycnc. Starting with Documents and moving to lists.
+            For this Demo I will use some Volunteer hours Data from sgsar.org</h4>
+          <a href="https://www.twilio.com/docs/api/sync/quickstart-js"
+             target="_blank">
+              Read the getting started guide
+              <i class="fa fa-fw fa-external-link"></i>
+          </a>
+        
+        
+      </div>
+      
+      <div class="panel panel-primary">
+          <div class="panel-heading">Set Up Form</div>
+          <div class="panel-body">
+              <h4>This is a shortcut to setting up the form for now</h4>
+              <input type="text" class="form-control" id="hourUser" placeholder="User..."/><br/>
+              <button class="btn btn-primary" id="loadUser">Get User</button>
+              <button class="btn btn-warning" onclick="clearUser()">Clear</button>
+          </div>
+          </div>
+      
+      <div class="panel panel-primary">
+        <div id="user" class="panel-heading">Enter New Hours</div>
+        <div class="panel-body">
+         
+          <select
+          type="select" class="form-control" id="hourType">
+          <option value="" disabled selected hidden placeholder>Please Choose...</option>
+          <OPTION>Mission</OPTION>
+          <OPTION>Training</OPTION>
+          <OPTION>Admin</OPTION>
+          <OPTION>Meeting</OPTION>
+          <OPTION>Other</OPTION>
+          </select><br/>
+          <input type="text" class="form-control" id="hourDate" placeholder="Date..."/><br/>
+          <input type="text" class="form-control" id="hourHours" placeholder="Hours..."/><br/>
+          <input type="text" class="form-control" id="hourMiles" placeholder="Miles..."/><br/>
+          <input type="text" class="form-control" id="hourNotes" placeholder="notes..."/><br/>
+          <button class="btn btn-primary" id="updateHours">Update Hours</button>
+          <button class="btn btn-warning" onclick="clearOutput()">Clear</button>
+          <div class="panel-body" id="getResult2"></div>
+        </div>
+      </div>
+       <div class="panel panel-primary">
+        <div class="panel-heading">Output.....{contents of Doc}</div>
+        <div class="panel-body">
+     
+            <div class="table">
+                <div class="table" id="hoursTable">
+                    
+                </div>
+             </Div> 
+         
+          <div class="panel-body" id="postResult"></div>
+        </div>
+      </div>
+      <div class="footer">
+       
+      </div>
+    </div>
+   
+  </body>
+</html>
