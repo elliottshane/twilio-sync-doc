@@ -3,6 +3,16 @@
 
 Here are the notes form the starter node.  you can follow these to get started.  The difference here is I am using sample data from one of my websites instead fo tic-tac-toe.
 
+I am now going to try and replicate the same functionality with Twilio Lists.
+
+Check out:
+https://www.twilio.com/blog/2017/09/building-a-todomvc-with-twilio-sync.html
+
+
+
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
 # Sync Quickstart for Node.js
 
 This application should give you a ready-made starting point for writing your

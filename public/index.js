@@ -17,7 +17,8 @@ $(function () {
   var $result = $('#postResult');
   var $UpdateHours = $('#updateHours')
   var $LoadUser =$('#loadUser')
-var data
+  var data
+  var name = document.getElementById('hourUser').value || 'shane'
   //Our interface to the Sync service
   var syncClient;
   //We're going to use a single Sync document, our simplest
@@ -44,11 +45,11 @@ var data
 
       //Initialize game board UI to current state (if it exists)
        data = syncDoc.get();
-      console.log(syncDoc)
+     
       $('#postResult').html($result.html() + '<br>....'+JSON.stringify(data, null, "\t"));
       //Let's subscribe to changes on this document, so when something
       //changes on this document, we can trigger our UI to update
-     // syncDoc.on('updated', updateTable);
+     //syncDoc.on('updated', updateTable(name));
 
     });
 
