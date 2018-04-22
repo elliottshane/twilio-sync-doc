@@ -18,14 +18,11 @@ API Secret | Used to authenticate - [just like the above, you'll get one here](h
 
 ## Generating a Service Instance
 
-During the Sync developer preview, you will need to generate Sync service
-instances via the REST API. This will eventually be replaced with a tool in the Twilio Console.
+Follwo the directions on Twilio for creating Service SIN and Secret. 
 
-```bash
-curl -X POST https://preview.twilio.com/Sync/Services \
- -d 'FriendlyName=MySyncServiceInstance' \
- -u 'SKXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX:your_api_secret'
-```
+https://www.twilio.com/console/sync/services
+
+
 
 ## A Note on API Keys
 
