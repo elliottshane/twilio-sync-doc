@@ -18,7 +18,7 @@ API Secret | Used to authenticate - [just like the above, you'll get one here](h
 
 ## Generating a Service Instance
 
-Follwo the directions on Twilio for creating Service SIN and Secret. 
+Follwo the directions on Twilio for creating Service SID and Secret. 
 
 https://www.twilio.com/console/sync/services
 
