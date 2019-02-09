@@ -137,7 +137,7 @@ updateTable(name)
 $LoadUser.on('click', function () {
 var name = document.getElementById('hourUser').value;
    updateTable(name)
-
+console.log(data)
 })
 
 function updateTable(name){
